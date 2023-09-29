@@ -3,48 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de compra</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Layout de grade com Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWbq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-
-<div class="container">
-
-    <h1 class="display-4 text-center my-5">Ótima escolha!</h1>
-    <p class="lead text-center my-5">Obrigado por comprar na Mirror Fashion! Preencha seus dados para efetivar a compra.</p>
-
-    <form class="row g-3" action="/compra" method="post">
-        <div class="col-md-6">
-            <label for="nome" class="form-label">Nome completo</label>
-            <input type="text" class="form-control" id="nome" name="nome" required>
-        </div>
-
-        <div class="col-md-6">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-
-        <div class="col-md-6">
-            <label for="cpf" class="form-label">CPF</label>
-            <input type="text" class="form-control" id="cpf" name="cpf" required>
-        </div>
-
-        <div class="col-md-6">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter" value="sim" checked>
-                <label class="form-check-label" for="newsletter">Quero receber Newsletter da Mirror Fashion</label>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 bg-black">
+                <h1 class="text-center">Coluna 1</h1>
+            </div>
+            <div class="col-md-4 bg-#666">
+                <h1 class="text-center">Coluna 2</h1>
+            </div>
+            <div class="col-md-4 bg-#999">
+                <h1 class="text-center">Coluna 3</h1>
             </div>
         </div>
-
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary">Confirmar Pedido</button>
-        </div>
-    </form>
-
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</
-
-body>
+    </div>
+</body>
 </html>
